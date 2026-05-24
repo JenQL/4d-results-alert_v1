@@ -23,7 +23,8 @@ jobs:
 
       - name: Run script
         env:
-          EMAIL_USER: ${{ secrets.EMAIL_USER }}
-          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_USER_PASS: ${{ secrets.EMAIL_USER_PASS }}
+          
         run: python Magnum_DamaCai_MY_v1.py
