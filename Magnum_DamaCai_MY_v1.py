@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 import smtplib
 from email.mime.text import MIMEText
 import datetime
+import sys
 
 # Get today’s date in YYYY-MM-DD format
 today = datetime.date.today().strftime("%Y-%m-%d")
@@ -28,7 +29,7 @@ for url, name in zip(urls,names):
 
     if not prize_rows:
         print(f"No results available for {today}. Skipping alert.")
-        exit()  # Stop script if no results
+        sys.exit(0)  # Stop script if no results
     else:
         prizes = prize_rows[0].find_all("td")
         first, second, third = [td.text.strip() for td in prizes]
