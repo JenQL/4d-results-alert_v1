@@ -11,8 +11,8 @@ import datetime
 import sys
 
 # Get today’s date in YYYY-MM-DD format
-# today = datetime.date.today().strftime("%Y-%m-%d")
-today = "2026-08-01"
+today = datetime.date.today().strftime("%Y-%m-%d")
+
 target_numbers = ["1814", "4272", "8292", "3603","6232"]
 
 names = ['Magnum', 'DaMaCai']
