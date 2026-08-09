@@ -2,7 +2,7 @@ name: Daily 4D Results Alert
 
 on:
   schedule:
-    - cron: "0 11 * * *"   # Runs daily at 11:00 Malaysia time (UTC+8)
+    - cron: "0 12 * * *"   # Runs daily at 20:00 Malaysia time (UTC+8)
   workflow_dispatch:
 
 jobs:
